@@ -19,13 +19,233 @@ $color3:whitesmoke;
     justify-content: center;
     align-items: center;   
 }
-body{
-    margin: 0 auto;
-    text-align: center;
-}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
+}
+
+body{
+
+    background: url(/Project/La_montagne/assets/img/bg.jpg) no-repeat center center fixed;
+
+
+}
+
+header{
+    min-width: 1100px;
+    min-height: 900px;
+    display: grid;
+    grid-template-rows: 90% 10%;
+    h1{
+        color: $color1;
+        font-family: $font1;
+        text-transform: uppercase;
+        width:35% ;
+        margin: 150px auto 50px;
+        font-size: 4rem;
+    }
+    p{
+        color: $color1;
+        font-family: $font2;
+        width:60%;
+        margin: 0 auto; 
+    }
+
+
+    .text{
+    display: block;
+    text-align: center;
+        i{
+        //    margin: 100px auto;  
+           color: $color1;
+           width: 20px;
+           border: 2px solid $color1;
+           border-radius: 10px;
+           transform: scale(2);
+           margin-top: 100px;
+        }
+
+    }
+    nav{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        width: 80%;
+        margin: auto;
+        height: 50px;
+        background: rgba(255, 255, 255, 0.371);
+        // filter: blur(1px);
+        .nav-left{
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                
+                
+                a{
+                text-decoration: none;
+
+                }
+            }
+            li{
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                cursor: pointer;
+                position: relative;
+                transition: 0.3s ease;
+                
+                height: 50px;
+                
+                color: $color1;
+
+                }
+            li:hover{
+                
+                background: $color1;
+                color : $color2;
+            }
+            
+
+        }
+        .nav-right{
+            margin-left: 50%;
+            ul{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0 50px;
+                margin: 20px 0 20px 0 ;
+                a{
+                text-decoration: none;
+                }
+                
+                
+            }
+            li{
+
+                cursor: pointer;
+                position: relative;
+                transition: 0.3s ease;
+                height: 50px;
+                }
+        }
+    }
+
+}
+
+.section-1{
+    padding-top:50px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background: $color1;
+    
+    h4{
+        color: $color2;
+        margin: 20px auto 50px;
+        font-size: 1rem;
+        font-family: $font2;
+        
+        &::before{
+            content: "";
+            width: 25%;
+            height: 1px;
+            position: absolute;
+            background: $color2;
+            transform: translatex(-120%) translatey(9px);
+            
+        }
+        &::after{
+            content: "";
+            width: 25%;
+            height: 1px;
+            position: absolute;
+            background: $color2;
+            transform: translatex(20%) translatey(9px);
+            
+        }
+
+    }
+    h2{
+        text-transform: uppercase;
+        color: $color2;
+        font-size: 2.5rem;
+        margin: 50px 30% 50px 30% ;
+    }
+    p{
+        color: $color2;
+        font-size: 0.9rem;
+        margin: 10px 30% 50px 30% ;
+        line-height: 30px;
+    }
+    .img-big{
+        height: 600px;
+        width: 80%;
+        margin: 0 auto;
+        background: url(../img/pic01.jpg) no-repeat center center;
+    }
+    .button{
+        margin-top: 60px;
+        margin-bottom: 100px;
+        background: $color1;
+        outline: none;
+        height: 40px;
+        width: 160px;
+        border: 1px solid $color2;
+        color: $color2;
+        text-transform: uppercase;
+
+        transition: 0.4s ease;
+        cursor: pointer;
+    }
+    .button:hover{
+        background:$color2;
+        color: $color1;
+        transition: 0.4s;
+    }
+    border-bottom: solid 1px $color2;
+    
+}
+.section-2{
+    background: url(../img/pic02.jpg)
+    padding-top:50px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background: $color1;
+    display: flex;
+    grid-template-columns: 50% 50%;
+
+    .image-2_3{
+        h5{
+            color: $color2;
+        margin: 20px auto 50px;
+        font-size: 1rem;
+        font-family: $font2;
+        }
+        h3{
+            color: $color2;
+        margin: 20px auto 50px;
+        font-size: 1rem;
+        font-family: $font2;
+        }
+        p{
+            color: $color2;
+            font-size: 0.9rem;
+            margin: 10px 30% 50px 30% ;
+            line-height: 30px;
+        }
+        .img-right{
+            // background: url(../img/pic02.jpg);
+            background: red;
+        }
+        .img-left{
+            background: url(../img/pic03.jpg);
+        }
+
+    }
+
 }
