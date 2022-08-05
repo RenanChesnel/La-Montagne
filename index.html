@@ -16,145 +16,146 @@
   </head>
   <body>
     <header>
-      <div class="text">
-        <!-- <img src="./assets/img/bg.jpg" alt="montagnard" /> -->
-
-        <h1>la montagne ça vous gagne</h1>
+      <div class="header-content">
+        <h1>
+          la montagne <br />
+          ça vous gagne
+        </h1>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam beatae
           ab quas, ex doloribus quod?
         </p>
-        <!-- icone font awsome -->
-        <div class="fleche-font-awsome">
-          <i class="fa-solid fa-arrow-down"></i>
-        </div>
+        <!-- icone font awsome : flrchr du bas -->
+        <span
+          ><a href="#main"><i class="fa-solid fa-arrow-down"></i></a
+        ></span>
       </div>
       <nav>
-        <div class="nav-left">
-          <ul>
-            <li><a href="#">this is massively</a></li>
-            <li><a href="#">generic page</a></li>
-            <li><a href="#">element reference</a></li>
-          </ul>
-        </div>
-        <div class="nav-right">
-          <ul>
-            <li>
-              <a href="#">
-                <i class="fa-brands fa-twitter"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa-brands fa-facebook"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <i class="fa-brands fa-instagram"></i>
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="nav-left">
+          <li><a href="#">this is massively</a></li>
+          <li><a href="#">generic page</a></li>
+          <li><a href="#">element reference</a></li>
+        </ul>
+
+        <ul class="nav-right">
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
       </nav>
     </header>
-    <section class="section-1">
-      <h4>April 25, 2017</h4>
-      <h2>and this is a massive headline</h2>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta autem
-        incidunt maxime quae, similique cupiditate ad aut quaerat iusto
-        consequatur amet laudantium fuga quis ut repudiandae?
-      </p>
-      <div class="img-big"></div>
-      <button class="button">full story</button>
-    </section>
-    <section class="section-2">
-      <div class="image-2_3">
-        <h5>April 24, 2017</h5>
-        <h3>sed agma ipsum fausibus</h3>
-        <div class="img-left"></div>
+    <main>
+      <section class="section-1">
+        <span> April 25, 2017</span>
+        <h2>and this is a <br />massive headline</h2>
         <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
-          asperiores illo, fugit minima sed ipsum ratione recusandae, quo
-          maiores esse nisi.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Soluta autem
+          incidunt maxime quae, similique cupiditate ad aut quaerat iusto
+          consequatur amet laudantium fuga quis ut repudiandae?
         </p>
-        <button class="button">ful story</button>
-      </div>
-      <div class="image-2_3">
-        <h5>April 22, 2017</h5>
-        <h3>primis eget imperdied lorem</h3>
-        <div class="img-right"></div>
-        <p>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
-          asperiores illo, fugit minima sed ipsum ratione recusandae, quo
-          maiores esse nisi.
-        </p>
-        <button class="button">full story</button>
-      </div>
-    </section>
-    <section class="formulaire">
+        <img src="./assets/img/pic01.jpg" alt="img-hikking" />
+        <button class="btn">full story</button>
+      </section>
+      <section class="section-2">
+        <div class="left-part">
+          <span> April 24, 2017</span>
+          <h3>
+            sed agma <br />
+            ipsum fausibus
+          </h3>
+          <img src="./assets/img/pic02.jpg" alt="forest" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+            asperiores illo, fugit minima sed ipsum ratione recusandae, quo
+            maiores esse nisi.
+          </p>
+          <button class="btn">ful story</button>
+        </div>
+        <div class="right-part">
+          <span>April 22, 2017</span>
+          <h3>
+            primis eget <br />
+            imperdied lorem
+          </h3>
+          <img src="./assets/img/pic03.jpg" alt="forest" />
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eos
+            asperiores illo, fugit minima sed ipsum ratione recusandae, quo
+            maiores esse nisi.
+          </p>
+          <button class="btn">full story</button>
+        </div>
+      </section>
+    </main>
+    <footer>
       <form action="">
-        <div class="formulaire-left">
-          <div>
-            <label for="name">Name</label>
-            <input type="text" id="name" />
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+        <label for="email">Email</label>
+        <input type="text" id="email" />
+        <label for="message">Message</label>
+        <textarea id="message"></textarea>
+          <div class="submit-container">
+              <input type="submit" class="btn" value="Send message" />
           </div>
-          <div>
-            <label for="email">Email</label>
-            <input type="text" id="email" />
+        </form>
+          <div class="info-contact">
+            <div>
+              <h3>Adresse</h3>
+              <p>1234, somewhereroad, 84230 <br> Paris, FRANCE</p>  
+            </div>         
+            <div>
+              <h3>Phone</h3>
+              <p>(+33) 695468787</p>
+            </div>
+            <div>
+              <h3>email</h3>
+              <p>info@untitle.ldt</p>
+            </div>
+            <div class="social">
+              <h3>Social</h3>
+                <ul>
+                  <li>
+                    <a href="#">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-brands fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-brands fa-instagram"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+               </div>
           </div>
-          <div class="message">
-            <label for="message">Message</label>
-            <textarea id="message"></textarea>
-          </div>
-          <input type="submit" class="button" value="Send message" />
-        </div>
-        <div class="formulaire-right">
-          <div>
-            <label for="name">Name</label>
-            <label for="name">1234, somewhereroad, 84230 Paris, FRANCE</label>
-          </div>
-          <div>
-            <label for="phone">Phone</label>
-            <label for="phone">(+33) 695468787 </label>
-          </div>
-          <div>
-            <label for="email">email</label>
-            <label for="email">info@untitle.ldt </label>
-          </div>
-          <div class="social">
-            <label for="name">Social</label>
-            <ul>
-              <li>
-                <a href="#">
-                  <i class="fa-brands fa-twitter"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa-brands fa-facebook"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa-brands fa-instagram"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </form>
-    </section>
+        </section>
+      </footer>
   </body>
 </html>

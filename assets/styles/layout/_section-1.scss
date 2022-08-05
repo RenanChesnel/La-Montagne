@@ -1,0 +1,59 @@
+/*-----------section 1 -------------------------*/
+
+.section-1{
+    padding-top:50px;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    background: $color1;
+    
+    h4{
+        color: $color2;
+        margin: 20px auto 50px;
+        font-size: 1rem;
+        font-family: $font2;
+        
+        &::before{
+            content: "";
+            width: 25%;
+            height: 1px;
+            position: absolute;
+            background: $color2;
+            transform: translatex(-120%) translatey(9px);
+            
+        }
+        &::after{
+            content: "";
+            width: 25%;
+            height: 1px;
+            position: absolute;
+            background: $color2;
+            transform: translatex(20%) translatey(9px);
+            
+        }
+
+    }
+    h2{
+        text-transform: uppercase;
+        color: $color2;
+        font-size: 2.5rem;
+        margin: 50px 30% 50px 30% ;
+    }
+    p{
+        color: $color2;
+        font-size: 0.9rem;
+        margin: 10px 30% 50px 30% ;
+        line-height: 30px;
+    }
+    .img-big{
+        height: 600px;
+        width: 80%;
+        margin: 0 auto;
+        background: url(../img/pic01.jpg) no-repeat center center;
+    }
+
+    border-bottom: solid 1px $color2;
+    
+}
+

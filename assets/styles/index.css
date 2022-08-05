@@ -13,190 +13,151 @@
   list-style: none;
 }
 
-body {
-  background: url(/Project/La_montagne/assets/img/bg.jpg) no-repeat center center fixed;
+html {
+  scroll-behavior: smooth;
 }
 
-header {
-  min-width: 1100px;
-  min-height: 900px;
-  display: grid;
-  grid-template-rows: 90% 10%;
+a, a:visited {
+  color: rgb(243, 243, 243);
+  text-decoration: none;
 }
-header h1 {
-  color: white;
-  font-family: font1;
-  text-transform: uppercase;
-  width: 35%;
-  margin: 150px auto 50px;
-  font-size: 4rem;
+
+a {
+  text-decoration: none;
 }
-header p {
-  color: white;
-  font-family: font2;
-  width: 60%;
+
+body {
+  background: url(/Project/La_montagne/assets/img/bg.jpg) fixed center/cover;
+  text-align: center;
+  font-family: font2, serif;
+  max-width: 1300px;
   margin: 0 auto;
 }
-header .text {
-  display: block;
-  text-align: center;
+body:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(17, 17, 17);
+  -webkit-animation: animBefore 1.5s ease forwards;
+          animation: animBefore 1.5s ease forwards;
+  -webkit-animation-delay: 0.15s;
+          animation-delay: 0.15s;
 }
-header .text i {
-  color: white;
-  width: 20px;
-  border: 2px solid white;
-  border-radius: 10px;
-  transform: scale(2);
-  margin-top: 100px;
+@-webkit-keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+@keyframes animBefore {
+  to {
+    opacity: 0;
+  }
+}
+
+.btn {
+  background: none;
+  border: 2px solid rgb(17, 17, 17);
+  height: 45px;
+  width: 170px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  font-family: font1, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+/*----------header--------------------*/
+header {
+  color: rgb(243, 243, 243);
+  position: relative;
+  min-height: 100vh;
+}
+header .header-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  opacity: 0;
+  transform: translateY(40px);
+  -webkit-animation: headerAnim 1.5s forwards;
+          animation: headerAnim 1.5s forwards;
+}
+@-webkit-keyframes headerAnim {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes headerAnim {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+header .header-content h1 {
+  font-family: font1, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 4rem;
+  letter-spacing: 6px;
+}
+header .header-content p {
+  margin: 40px auto 60px;
+  font-style: italic;
+  width: 85%;
+}
+header .header-content span {
+  border: 2px solid rgb(243, 243, 243);
+  border-radius: 50px;
+  height: 60px;
+  width: 60px;
+  font-size: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 header nav {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  width: 80%;
-  margin: auto;
-  height: 50px;
-  background: rgba(255, 255, 255, 0.371);
-}
-header nav .nav-left ul {
   display: flex;
   justify-content: space-between;
+  background: rgba(255, 255, 255, 0.257);
+  color: rgb(243, 243, 243);
+  width: 85%;
+  height: 65px;
+  z-index: 100;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+header nav ul {
+  display: flex;
   align-items: center;
 }
-header nav .nav-left ul a {
-  text-decoration: none;
-}
-header nav .nav-left li {
-  font-size: 0.9rem;
+header nav nav-left li {
+  font-family: font1, sans-serif;
+  letter-spacing: 2px;
   text-transform: uppercase;
-  cursor: pointer;
-  position: relative;
-  transition: 0.3s ease;
-  height: 50px;
-  color: white;
-}
-header nav .nav-left li:hover {
-  background: white;
-  color: black;
-}
-header nav .nav-right {
-  margin-left: 50%;
-}
-header nav .nav-right ul {
+  font-size: 2.7rem;
+  padding: 0 15px;
+  height: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 50px;
-  margin: 20px 0 20px 0;
-}
-header nav .nav-right ul a {
-  text-decoration: none;
-}
-header nav .nav-right li {
-  cursor: pointer;
-  position: relative;
-  transition: 0.3s ease;
-  height: 50px;
-}
-
-.section-1 {
-  padding-top: 50px;
-  width: 80%;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  background: white;
-  border-bottom: solid 1px black;
-}
-.section-1 h4 {
-  color: black;
-  margin: 20px auto 50px;
-  font-size: 1rem;
-  font-family: font2;
-}
-.section-1 h4::before {
-  content: "";
-  width: 25%;
-  height: 1px;
-  position: absolute;
-  background: black;
-  transform: translatex(-120%) translatey(9px);
-}
-.section-1 h4::after {
-  content: "";
-  width: 25%;
-  height: 1px;
-  position: absolute;
-  background: black;
-  transform: translatex(20%) translatey(9px);
-}
-.section-1 h2 {
-  text-transform: uppercase;
-  color: black;
-  font-size: 2.5rem;
-  margin: 50px 30% 50px 30%;
-}
-.section-1 p {
-  color: black;
-  font-size: 0.9rem;
-  margin: 10px 30% 50px 30%;
-  line-height: 30px;
-}
-.section-1 .img-big {
-  height: 600px;
-  width: 80%;
-  margin: 0 auto;
-  background: url(../img/pic01.jpg) no-repeat center center;
-}
-.section-1 .button {
-  margin-top: 60px;
-  margin-bottom: 100px;
-  background: white;
-  outline: none;
-  height: 40px;
-  width: 160px;
-  border: 1px solid black;
-  color: black;
-  text-transform: uppercase;
-  transition: 0.4s ease;
   cursor: pointer;
 }
-.section-1 .button:hover {
-  background: black;
-  color: white;
-  transition: 0.4s;
+header nav nav-left li:first-child {
+  background: rgb(243, 243, 243);
+  color: rgb(17, 17, 17);
 }
-
-.section-2 {
-  padding-top: 50px;
-  width: 80%;
-  display: block;
-  margin: 0 auto;
-  text-align: center;
-  background: white;
-  display: flex;
-  grid-template-columns: 50% 50%;
-}
-.section-2 .image-2_3 h5 {
-  color: black;
-  margin: 20px auto 50px;
-  font-size: 1rem;
-  font-family: font2;
-}
-.section-2 .image-2_3 h3 {
-  color: black;
-  margin: 20px auto 50px;
-  font-size: 1rem;
-  font-family: font2;
-}
-.section-2 .image-2_3 p {
-  color: black;
-  font-size: 0.9rem;
-  margin: 10px 30% 50px 30%;
-  line-height: 30px;
-}
-.section-2 .image-2_3 .img-right {
-  background: red;
-}
-.section-2 .image-2_3 .img-left {
-  background: url(../img/pic03.jpg);
+header nav nav-left li:hover {
+  background: rgb(243, 243, 243);
+  color: rgb(17, 17, 17);
 }/*# sourceMappingURL=index.css.map */
