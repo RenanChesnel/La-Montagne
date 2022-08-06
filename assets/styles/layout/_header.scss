@@ -25,6 +25,10 @@ header{
             @include title;
             font-size: 4rem;
             letter-spacing: 6px;
+
+            @media screen and (max-width:700px) {
+                font-size: 2rem;
+            }
             }
         p{
             margin:40px auto 60px ;
@@ -63,23 +67,60 @@ header{
             display: flex;
             align-items: center;
         }
-        nav-left{
+        .nav-left{
+            // pour les onglet non sucolé de la nav 
+            &:hover li:not(:hover){
+                background: none;
+                a{
+                    color: $white1;
+                }
+            }
             li{
                 @include title;
-                font-size : 2.7rem;
+                font-size : 0.7rem;
                 padding: 0 15px;
                 height: 100%;
                 display: flex;
                 align-items: center;
                 cursor: pointer;
 
+                @media screen and (max-width:700px) {
+                    font-size: 0.5rem;
+                }
+
                 &:first-child{
                     background: $white1;
+                    a{
                     color: $black1;
+                }
                 }
                 &:hover{
                     background: $white1;
-                    color: $black1;                
+                    color: $black1;
+                    a{
+                        color: $black1;
+                    }                
+                }
+            }
+        }
+        .nav-right{
+            // on est déjà en fle dans ul
+            font-size: 1.1rem;
+            min-width: 100px;
+            width: 25%;
+            max-width: 300px;
+            justify-content: space-around;
+            margin-right: 10px;
+
+            @media screen and (max-width:700px) {
+                display: none;
+            }
+
+            li{
+                transition: 0.15s;
+                cursor: pointer;
+                &:hover{
+                    transform:scale(1.1);
                 }
             }
         }
